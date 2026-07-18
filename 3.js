@@ -1,7 +1,15 @@
-const celciusToFahrenheit = (c) => {
-  console.log(`${c} Celcius adalah ${(c * 9) / 5 + 32} Fahrenheit`);
+const fahrenheitToCelcius = (f) => {
+  console.log(`${f} Celcius adalah ${(f * 9) / 5 + 32} Fahrenheit`);
 
-  return (c * 9) / 5 + 32;
+  return (f * 9) / 5 + 32;
 };
 
-celciusToFahrenheit(0);
+fahrenheitToCelcius(-10);
+
+const celciusToFahrenheit = (c) => {
+  console.log(`${c} Celcius adalah ${(c - 32) / 1.8} Fahrenheit`);
+
+  return (c - 32) / 1.8;
+};
+
+celciusToFahrenheit(5);
